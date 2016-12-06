@@ -1,0 +1,94 @@
+
+
+    	<div data-role="header">
+    	   <h1>Crea tu Presupuesto</h1>
+           <div class="navegacion"></div>
+         </div>    
+
+         <div role="main" class="ui-content"></div>         
+         <form>
+            <h3 class="ui-bar ui-bar-a">Personaliza los Parámetros</h3>
+            <div class="ui-body">
+              <label for="paginas">Páginas <small>Selecciona el numero de paginas que realizaras</small></label>
+              <input type="range"  name="paginas" id="paginas" min="0" max="100" value="50" value="1">
+            </div>
+
+            <div class="ui-body">
+              <label for="temas">Temas <small>Selecciona el numero de temas</small></label>
+              <input type="range"  name="paginas" id="paginas" min="0" max="100" value="50" value="1">
+            </div>
+
+
+            <fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+               <legend>Complejidad <smaill id="complejidad-descripcion"></legend>
+
+               <input name="complejidad" id="c-personal" type="radio" data-descripcion="Descripcion-1">
+               <label for="c-personal">Personal</label>
+
+               <input name="complejidad" id="c-standard" type="radio" data-descripcion="Descripcion-2">
+               <label for="c-standard">Standard</label>
+
+               <input name="complejidad" id="c-avanzado" type="radio" data-descripcion="Descripcion-3">
+               <label for="c-avanzado">Avanzado</label>
+
+               <input name="complejidad" id="c-deluxe" type="radio" data-descripcion="Descripcion-4">
+               <label for="c-deluxe">Deluxe</label>
+
+               <input name="complejidad" id="c-empresarial" type="radio" data-descripcion="Descripcion-5">
+               <label for="c-empresarial">Empresarial</label>
+
+             </fieldset>
+               <label for="emails">Emails <small>Selecciona la cantidad de emails a configurar</small></label>
+               <input name="emails" id="emails" data-highlight="true" min="0" max="100" value="50" type="range">             
+
+               <fieldset data-role="controlgroup" data-type="horizontal">
+                 <legend>Opciones <small> Selecciona lo que desees</small></legend>
+                 <input value="logo" name="opciones" id="o-logo" type="checkbox">
+                 <label for="o-logo">Logo</label>
+
+                 <input value="feed" name="opciones" id="o-feed" type="checkbox">
+                 <label for="o-feed">Feed RSS</label>
+
+                 <input value="resp" name="opciones" id="o-resp" type="checkbox">
+                 <label for="o-resp">Responsive</label>
+
+                 <input value="busqueda" name="opciones" id="o-busqueda" type="checkbox">
+                 <label for="o-busqueda">Busqueda</label>
+
+                 <input value="archivos" name="opciones" id="o-archivos" type="checkbox">
+                 <label for="o-archivos">Archivos</label>
+
+               </fieldset>               
+
+               <fieldset data-role="controlgroup" data-type="horizontal">
+                 <legend>Social <small> Incrementa la interaccion de tus visitantes con contenido social dinamico</small></legend>
+                 <input value="facebook" name="social" id="s-facebook" type="checkbox">
+                 <label for="s-facebook">Facebook</label>
+
+                 <input value="twitter" name="social" id="s-twitter" type="checkbox">
+                 <label for="s-twitter">Twitter</label>
+
+                 <input value="blog" name="social" id="s-blog" type="checkbox">
+                 <label for="s-blog">Blog</label>
+
+                 <input value="youtube" name="social" id="s-youtube" type="checkbox">
+                 <label for="s-youtube">Youtube</label>
+
+                 <input value="otro" name="social" id="s-otro" type="checkbox">
+                 <label for="s-otro">Otro</label>
+
+               </fieldset>               
+
+               <div style="margin-top: 2em" 
+                  <label for="total">Total Bs.</label>
+                  <input class="text-total "name="total" id="total" value="1200.00" type="text" disabled="disabled">
+                </div>
+                    
+                 <input data-clear-btn="false" name="envio-email" id="envio-email." value="" type="email" placeholder="correo@dominio.com">  
+
+                 <a href="#" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon">Enviar</a>
+
+                 <input type="text" data-clear-btn="true" name="guardar" id="guardar" placeholder="Nombre y apellido" required="required">
+
+                 <a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Guardar</a>
+         </form>
